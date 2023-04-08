@@ -70,7 +70,7 @@
         android:layout_height="48dp"
         android:background="@drawable/btn_shape"
         android:fontFamily="@font/bebas_neue"
-        android:text="Login"
+        android:text="Book"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -117,6 +117,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Select Department"
+            android:fontFamily="@font/bebas_neue"
+            android:textColor="@color/white"
+            android:text="Sample"
+            >
+
+        </AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_doct"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/rgstr_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_text"
+        app:layout_constraintVertical_bias="0.700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        app:startIconDrawable="@drawable/icons8_medical_doctor_26"
+        android:background="@drawable/edt_background">
+        <AutoCompleteTextView
+            android:id="@+id/act_doct"
+            android:background="@drawable/edt_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Doctor"
             android:fontFamily="@font/bebas_neue"
             android:textColor="@color/white"
             android:text="Sample"
