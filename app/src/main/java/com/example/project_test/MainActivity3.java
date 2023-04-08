@@ -10,7 +10,6 @@ import android.widget.Button;
 
 public class MainActivity3 extends AppCompatActivity {
  Button button;
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +18,7 @@ public class MainActivity3 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iPtnt = new Intent(MainActivity3.this, MainActivity4.class);
+                Intent iPtnt = new Intent(getApplicationContext(), MainActivity4.class);
                 startActivity(iPtnt);
             }
         });

@@ -220,7 +220,7 @@
     </ListView>
 
     <Button
-        android:id="@+id/appt"
+        android:id="@+id/new_appt"
         android:layout_width="252dp"
         android:layout_height="52dp"
         android:background="@drawable/btn_shape"

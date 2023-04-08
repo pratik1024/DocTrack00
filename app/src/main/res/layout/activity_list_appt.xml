@@ -170,8 +170,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="263dp"
             android:layout_marginBottom="31dp"
-            tools:src="@tools:sample/avatars"
-            android:background="@drawable/circular_dp"/>
+            tools:src="@tools:sample/avatars" />
 
 
     </RelativeLayout>
