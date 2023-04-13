@@ -37,8 +37,8 @@ public class MainActivity6 extends AppCompatActivity {
 //        autoCompleteTextView = findViewById(R.id.act_dept);
 //        textInputLayout2 =findViewById(R.id.til_doct);
 //        autoCompleteTextView2 = findViewById(R.id.act_doct);
-        String [] dept={"Dept1","Dept2","Dept3","Dept4","Dept5","Dept6","Other"};
-        String [] doct={"Doct1","Doct2","Doct3","Doct4","Doct5","Doct6","Other",};
+        String [] dept={"Select Dept.","Dept1","Dept2","Dept3","Dept4","Dept5","Dept6"};
+        String [] doct={"Select Doct.","Doct1","Doct2","Doct3","Doct4","Doct5","Doct6"};
         ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(getApplicationContext(), R.layout.dept_list,dept);
 //        autoCompleteTextView.setAdapter(itemAdapter);
 //        autoCompleteTextView.setThreshold(1);
@@ -86,7 +86,10 @@ spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
         rgstr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showBookedDialog();
+
+//                showBookedDialog();
+                Intent iPtnt = new Intent(getApplicationContext(), MainActivity7.class);
+                startActivity(iPtnt);
             }
         });
 

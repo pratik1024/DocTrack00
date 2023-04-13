@@ -12,13 +12,28 @@
         android:theme="@style/Theme.Project_Test"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity7"
-            android:theme="@style/Theme.Project_Test"
+            android:name=".MainActivity12"
             android:exported="false" />
         <activity
-            android:name=".MainActivity6"
-            android:theme="@style/Theme.Project_Test"
+            android:name=".MainActivity11"
             android:exported="false" />
+        <activity
+            android:name=".MainActivity10"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity9"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity8"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity7"
+            android:exported="false"
+            android:theme="@style/Theme.Project_Test" />
+        <activity
+            android:name=".MainActivity6"
+            android:exported="false"
+            android:theme="@style/Theme.Project_Test" />
         <activity
             android:name=".list_appt"
             android:exported="false" />
