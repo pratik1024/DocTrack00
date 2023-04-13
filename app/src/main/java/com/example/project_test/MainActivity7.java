@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.BlendMode;
 import android.os.Bundle;
 import android.widget.Button;
+import android.window.SplashScreen;
 
 public class MainActivity7 extends AppCompatActivity {
     @Override

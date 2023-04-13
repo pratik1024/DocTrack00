@@ -14,38 +14,73 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
 
 
 public class MainActivity6 extends AppCompatActivity {
- AutoCompleteTextView autoCompleteTextView,autoCompleteTextView2;
- TextInputLayout textInputLayout,textInputLayout2;
+// AutoCompleteTextView autoCompleteTextView,autoCompleteTextView2;
+// TextInputLayout textInputLayout,textInputLayout2;
+    Spinner spinner1,spinner2;
  Button rgstr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
+        spinner1 = findViewById(R.id.dept);
+        spinner2 = findViewById(R.id.doct);
 
 
-        textInputLayout =findViewById(R.id.til_dept);
-        autoCompleteTextView = findViewById(R.id.act_dept);
-        textInputLayout2 =findViewById(R.id.til_doct);
-        autoCompleteTextView2 = findViewById(R.id.act_doct);
+//        textInputLayout =findViewById(R.id.til_dept);
+//        autoCompleteTextView = findViewById(R.id.act_dept);
+//        textInputLayout2 =findViewById(R.id.til_doct);
+//        autoCompleteTextView2 = findViewById(R.id.act_doct);
         String [] dept={"Dept1","Dept2","Dept3","Dept4","Dept5","Dept6","Other"};
         String [] doct={"Doct1","Doct2","Doct3","Doct4","Doct5","Doct6","Other",};
         ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(getApplicationContext(), R.layout.dept_list,dept);
-        autoCompleteTextView.setAdapter(itemAdapter);
-        autoCompleteTextView.setThreshold(1);
+//        autoCompleteTextView.setAdapter(itemAdapter);
+//        autoCompleteTextView.setThreshold(1);
         ArrayAdapter<String> itemAdapter2 = new ArrayAdapter<>(getApplicationContext(),R.layout.dept_list,doct);
-        autoCompleteTextView2.setAdapter(itemAdapter2);
-        autoCompleteTextView2.setThreshold(1);
+//        autoCompleteTextView2.setAdapter(itemAdapter2);
+//        autoCompleteTextView2.setThreshold(1);
 //        autoCompleteTextView.setOnClickListener(new AdapterView.OnItemClickListener(){
 //            @Override
 //            public void onItemClick(AdapterView<?>parent, View view, int position,long id){}
 //
 //        });
+        itemAdapter.setDropDownViewResource(R.layout.dept_list);
+        spinner1.setAdapter(itemAdapter);
+itemAdapter2.setDropDownViewResource(R.layout.dept_list);
+spinner2.setAdapter(itemAdapter2);
+
+spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String value1 = parent.getItemAtPosition(position).toString();
+        Toast.makeText(MainActivity6.this, value1, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+});
+
+spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String value2 = parent.getItemAtPosition(position).toString();
+        Toast.makeText(MainActivity6.this, value2, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+});
+
 
         rgstr = findViewById(R.id.rgstr_btn);
         rgstr.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +93,7 @@ public class MainActivity6 extends AppCompatActivity {
     }
     private void showBookedDialog(){
         ConstraintLayout boookedlayout = findViewById(R.id.bookedDialog);
-        View view= LayoutInflater.from(getApplicationContext()).inflate(R.layout.activity_main7,boookedlayout);
+        View view= LayoutInflater.from(MainActivity6.this).inflate(R.layout.success_dialog,boookedlayout);
         Button done=view.findViewById(R.id.done);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());

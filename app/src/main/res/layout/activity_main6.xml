@@ -59,10 +59,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
+        app:layout_constraintVertical_bias="0.445" />
 
     <Button
         android:id="@+id/rgstr_btn"
@@ -100,59 +100,86 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:layout_constraintVertical_bias="0.134" />
+<!-- Google Theme Spinner-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/til_dept"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/rgstr_btn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.491"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/desc_text"-->
+<!--        app:layout_constraintVertical_bias="0.244"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--        app:startIconDrawable="@drawable/baseline_content_paste_24"-->
+<!--        android:background="@drawable/edt_background">-->
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/act_dept"-->
+<!--            android:background="@drawable/edt_background"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Select Department"-->
+<!--            android:fontFamily="@font/bebas_neue"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="Sample"-->
+<!--            >-->
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_dept"
-        android:layout_width="350dp"
+<!--        </AutoCompleteTextView>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/til_doct"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/rgstr_btn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.491"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/desc_text"-->
+<!--        app:layout_constraintVertical_bias="0.700"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--        app:startIconDrawable="@drawable/icons8_medical_doctor_26"-->
+<!--        android:background="@drawable/edt_background">-->
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/act_doct"-->
+<!--            android:background="@drawable/edt_background"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Select Doctor"-->
+<!--            android:fontFamily="@font/bebas_neue"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="Sample"-->
+<!--            >-->
+
+<!--        </AutoCompleteTextView>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    <Spinner
+        android:id="@+id/dept"
+        android:layout_width="351dp"
         android:layout_height="50dp"
+        android:spinnerMode="dialog"
+        android:background="@drawable/edt_background"
         app:layout_constraintBottom_toTopOf="@+id/rgstr_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/desc_text"
-        app:layout_constraintVertical_bias="0.244"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        app:startIconDrawable="@drawable/baseline_content_paste_24"
-        android:background="@drawable/edt_background">
-        <AutoCompleteTextView
-            android:id="@+id/act_dept"
-            android:background="@drawable/edt_background"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Select Department"
-            android:fontFamily="@font/bebas_neue"
-            android:textColor="@color/white"
-            android:text="Sample"
-            >
+        app:layout_constraintVertical_bias="0.217">
 
-        </AutoCompleteTextView>
+    </Spinner>
 
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_doct"
-        android:layout_width="350dp"
+    <Spinner
+        android:id="@+id/doct"
+        android:layout_width="351dp"
         android:layout_height="50dp"
+        android:spinnerMode="dialog"
+        android:background="@drawable/edt_background"
         app:layout_constraintBottom_toTopOf="@+id/rgstr_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/desc_text"
-        app:layout_constraintVertical_bias="0.700"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        app:startIconDrawable="@drawable/icons8_medical_doctor_26"
-        android:background="@drawable/edt_background">
-        <AutoCompleteTextView
-            android:id="@+id/act_doct"
-            android:background="@drawable/edt_background"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Select Doctor"
-            android:fontFamily="@font/bebas_neue"
-            android:textColor="@color/white"
-            android:text="Sample"
-            >
+        app:layout_constraintVertical_bias="0.686">
 
-        </AutoCompleteTextView>
-
-    </com.google.android.material.textfield.TextInputLayout>
+    </Spinner>
 </androidx.constraintlayout.widget.ConstraintLayout>
