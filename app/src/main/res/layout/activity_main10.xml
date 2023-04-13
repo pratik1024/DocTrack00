@@ -156,7 +156,7 @@
     </Spinner>
 
     <Button
-        android:id="@+id/next_btn2"
+        android:id="@+id/rgstr_btn2"
         android:layout_width="167dp"
         android:layout_height="48dp"
         android:background="@drawable/btn_shape"

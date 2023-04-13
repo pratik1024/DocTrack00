@@ -2,15 +2,18 @@ package com.example.project_test;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity10 extends AppCompatActivity {
 Spinner spinner,spinner2,spinner3;
+Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +21,7 @@ Spinner spinner,spinner2,spinner3;
         spinner=findViewById(R.id.dept);
         spinner2=findViewById(R.id.qual);
         spinner3=findViewById(R.id.expr);
+        button= findViewById(R.id.rgstr_btn2);
 
         String [] dept={"Select Dept.","Dept1","Dept2","Dept3","Dept4","Dept5","Dept6"};
         String [] qual={"Select Qual.","Qual1","Qual2","Qual3","Qual4","Qual5","Qual6"};
@@ -71,6 +75,13 @@ Spinner spinner,spinner2,spinner3;
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iPtnt = new Intent(getApplicationContext(), MainActivity11.class);
+                startActivity(iPtnt);
             }
         });
     }
