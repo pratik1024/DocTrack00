@@ -1,6 +1,6 @@
 # DocTracker
 
-DocTracker is an Android app that helps hospitals manage patient appointments. The app allows patients to login and book appointments, while doctors can view and manage appointments.
+DocTracker is an Android app built in Android Studio that helps hospitals manage appointments between patients and doctors. With this app, patients can log in and book appointments with available doctors, while doctors can view and manage their appointments.
 
 ## Features
 
@@ -9,6 +9,12 @@ DocTracker is an Android app that helps hospitals manage patient appointments. T
 - User-friendly interface
 - Secure login using authentication
 - Easily customizable
+
+## Technologies Used
+-Android Studio
+-Java
+-Firebase Authentication
+-Firebase Realtime Database
 
 ## Installation
 
@@ -28,7 +34,7 @@ To use DocTracker, follow these steps:
 
 ## Contributing
 
-If you would like to contribute to DocTracker, please follow these guidelines:
+Contributions are welcome!If you would like to contribute to DocTracker, please follow these guidelines:
 
 1. Fork the repository.
 2. Create a new branch for your changes.
