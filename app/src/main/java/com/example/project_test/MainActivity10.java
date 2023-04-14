@@ -1,8 +1,12 @@
 package com.example.project_test;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,8 +15,19 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import org.jetbrains.annotations.NotNull;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+
 public class MainActivity10 extends AppCompatActivity {
 Spinner spinner,spinner2,spinner3;
+CircleImageView profile ;
+FloatingActionButton changeDP ;
 Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +37,8 @@ Button button;
         spinner2=findViewById(R.id.qual);
         spinner3=findViewById(R.id.expr);
         button= findViewById(R.id.rgstr_btn2);
+        profile = findViewById(R.id.profile_image);
+        changeDP = findViewById(R.id.floatingActionButton5);
 
         String [] dept={"Select Dept.","Dept1","Dept2","Dept3","Dept4","Dept5","Dept6"};
         String [] qual={"Select Qual.","Qual1","Qual2","Qual3","Qual4","Qual5","Qual6"};
@@ -84,5 +101,36 @@ Button button;
                 startActivity(iPtnt);
             }
         });
+//        ActivityResultLauncher<Intent> launcher=
+//                registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),(ActivityResult result)->{
+//                    if(result.getResultCode()==RESULT_OK){
+//                        Uri uri=result.getData().getData();
+//                        // Use the uri to load the image
+//                    }else if(result.getResultCode()==ImagePicker.RESULT_ERROR){
+//                        // Use ImagePicker.Companion.getError(result.getData()) to show an error
+//                    }
+//                });
+//        changeDP.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ImagePicker.Companion.with(MainActivity10.this)
+//                        .crop()
+//                        .cropOval()
+//                        .maxResultSize(512,512,true)
+//                        .provider(ImageProvider.BOTH) //Or bothCameraGallery()
+//                        .createIntentFromDialog((Function1)(new Function1(){
+//                            public Object invoke(Object var1){
+//                                this.invoke((Intent)var1);
+//                                return Unit.INSTANCE;
+//                            }
+//
+//                            public final void invoke(@NotNull Intent it){
+//                                Intrinsics.checkNotNullParameter(it,"it");
+//                                launcher.launch(it);
+//                            }
+//                        }));
+//
+//            }
+//        });
     }
 }
