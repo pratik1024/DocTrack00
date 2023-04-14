@@ -38,8 +38,8 @@ If you would like to contribute to DocTracker, please follow these guidelines:
 
 ## Credits
 
-DocTracker was created by [Your Name].
+DocTracker was created by Shaikh Habibur Rehaman and Pratik Ranjan Dash.
 
 ## License
 
-DocTracker is licensed under the [Your License Name] license. See the LICENSE file for more information.
+DocTracker is not having license yet
