@@ -11,10 +11,10 @@ DocTracker is an Android app built in Android Studio that helps hospitals manage
 - Easily customizable
 
 ## Technologies Used
--Android Studio
--Java
--Firebase Authentication
--Firebase Realtime Database
+- Android Studio
+- Java
+- Firebase Authentication
+- Firebase Realtime Database
 
 ## Installation
 
