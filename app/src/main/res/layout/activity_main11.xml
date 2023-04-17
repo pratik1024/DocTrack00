@@ -7,7 +7,35 @@
     tools:context=".MainActivity11"
     android:background="@drawable/background">
 
+<!--    <EditText-->
+<!--        android:id="@+id/search"-->
+<!--        android:layout_width="343dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:background="@drawable/edt_background"-->
+<!--        android:drawableEnd="@drawable/baseline_search_24"-->
+<!--        android:imeOptions=""-->
+<!--        android:inputType="text"-->
+<!--        android:paddingRight="20dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/search_btn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.545" />-->
 
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gd_left_05"
@@ -189,6 +217,7 @@
         app:layout_constraintVertical_bias="0.650">
 
     </TextView>
+
     <TextView
         android:id="@+id/gender_set"
         android:layout_width="256dp"
@@ -216,7 +245,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/gd_end_dtls"
-        app:layout_constraintVertical_bias="0.866">
+        app:layout_constraintVertical_bias="0.525">
 
     </ListView>
 

@@ -19,7 +19,7 @@ public class MainActivity7 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iPtnt = new Intent(getApplicationContext(), MainActivity2.class);
+                Intent iPtnt = new Intent(getApplicationContext(), MainActivity5.class);
                 startActivity(iPtnt);
             }
         });

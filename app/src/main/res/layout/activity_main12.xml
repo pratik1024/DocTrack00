@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/next_btn3"
+        android:id="@+id/back_btn"
         android:layout_width="167dp"
         android:layout_height="48dp"
         android:background="@drawable/btn_shape"
