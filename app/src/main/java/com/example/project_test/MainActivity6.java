@@ -19,6 +19,8 @@ import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
 
+import io.github.muddz.styleabletoast.StyleableToast;
+
 
 public class MainActivity6 extends AppCompatActivity {
 // AutoCompleteTextView autoCompleteTextView,autoCompleteTextView2;
@@ -59,7 +61,8 @@ spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String value1 = parent.getItemAtPosition(position).toString();
-        Toast.makeText(MainActivity6.this, value1, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(MainActivity6.this, value1, Toast.LENGTH_SHORT).show();
+        StyleableToast.makeText(getApplicationContext(), value1, Toast.LENGTH_LONG, R.style.mytoast).show();
     }
 
     @Override
@@ -72,7 +75,8 @@ spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String value2 = parent.getItemAtPosition(position).toString();
-        Toast.makeText(MainActivity6.this, value2, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(MainActivity6.this, value2, Toast.LENGTH_SHORT).show();
+        StyleableToast.makeText(getApplicationContext(), value2, Toast.LENGTH_LONG, R.style.mytoast).show();
     }
 
     @Override

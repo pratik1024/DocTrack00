@@ -20,6 +20,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import org.jetbrains.annotations.NotNull;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import io.github.muddz.styleabletoast.StyleableToast;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
@@ -62,7 +63,8 @@ Button button;
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String value1 = parent.getItemAtPosition(position).toString();
-                Toast.makeText(MainActivity10.this, value1, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity10.this, value1, Toast.LENGTH_SHORT).show();
+                StyleableToast.makeText(getApplicationContext(), value1, Toast.LENGTH_LONG, R.style.mytoast).show();
             }
 
             @Override
@@ -73,8 +75,9 @@ Button button;
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String value1 = parent.getItemAtPosition(position).toString();
-                Toast.makeText(MainActivity10.this, value1, Toast.LENGTH_SHORT).show();
+                String value2 = parent.getItemAtPosition(position).toString();
+//                Toast.makeText(MainActivity10.this, value2, Toast.LENGTH_SHORT).show();
+                StyleableToast.makeText(getApplicationContext(), value2, Toast.LENGTH_LONG, R.style.mytoast).show();
             }
 
             @Override
@@ -85,8 +88,9 @@ Button button;
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String value1 = parent.getItemAtPosition(position).toString();
-                Toast.makeText(MainActivity10.this, value1, Toast.LENGTH_SHORT).show();
+                String value3 = parent.getItemAtPosition(position).toString();
+//                Toast.makeText(MainActivity10.this, value1, Toast.LENGTH_SHORT).show();
+                StyleableToast.makeText(getApplicationContext(), value3, Toast.LENGTH_LONG, R.style.mytoast).show();
             }
 
             @Override
