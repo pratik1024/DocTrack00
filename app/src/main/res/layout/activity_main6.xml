@@ -90,7 +90,7 @@
         android:layout_marginTop="0dp"
         android:lines="10"
         android:inputType="textLongMessage"
-        android:text=""
+        android:text="I am suffering from fever"
         android:hint="Type Here..."
         android:padding="10dp"
         android:background="@drawable/edt_background"

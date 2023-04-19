@@ -141,7 +141,7 @@
             android:layout_marginEnd="29dp"
             android:layout_marginBottom="34dp"
             android:fontFamily="@font/bebas_neue"
-            android:text="name data set here"
+            android:text="9234572342"
             android:textColor="@color/white"
             android:textSize="23sp" />
 

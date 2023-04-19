@@ -28,7 +28,7 @@
         android:layout_height="48dp"
         android:background="@drawable/btn_shape"
         android:fontFamily="@font/bebas_neue"
-        android:text="Search"
+        android:text="Check"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -172,7 +172,7 @@
         android:layout_height="36dp"
         android:fontFamily="@font/bebas_neue"
         android:paddingLeft="10sp"
-        android:text="Name Error"
+        android:text="Pratik Ranjan Dash"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/gd_end_dtls"
@@ -189,7 +189,7 @@
         android:layout_height="36dp"
         android:fontFamily="@font/bebas_neue"
         android:paddingLeft="10sp"
-        android:text="Phone No.Error"
+        android:text="9040408168"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/gd_end_dtls"
@@ -206,7 +206,7 @@
         android:layout_height="36dp"
         android:fontFamily="@font/bebas_neue"
         android:paddingLeft="10sp"
-        android:text="Age Error"
+        android:text="20"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/gd_end_dtls"
@@ -224,7 +224,7 @@
         android:layout_height="36dp"
         android:fontFamily="@font/bebas_neue"
         android:paddingLeft="10sp"
-        android:text="Gender Error"
+        android:text="Male"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/gd_end_dtls"
@@ -236,17 +236,52 @@
 
     </TextView>
 
-    <ListView
-        android:id="@+id/list_appt_dtls"
-        android:layout_width="362dp"
-        android:layout_height="294dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gd_end_dtls"
-        app:layout_constraintVertical_bias="0.525">
+<!--    <ListView-->
+<!--        android:id="@+id/list_appt_dtls"-->
+<!--        android:layout_width="362dp"-->
+<!--        android:layout_height="294dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.489"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/gd_end_dtls"-->
+<!--        app:layout_constraintVertical_bias="0.525">-->
 
-    </ListView>
+<!--    </ListView>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="354dp"
+        android:layout_height="85dp"
+        android:background="@drawable/edt_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd_strt_lst">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
+            android:text="Shaikh Habibur Rehaman"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.172" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
+            android:text="9777795786"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.655" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

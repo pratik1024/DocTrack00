@@ -41,7 +41,7 @@
         android:background="@drawable/edt_background"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:hint="ID Number"
+        android:hint="Email"
         android:fontFamily="@font/bebas_neue"
         android:textSize="20dp"
         android:drawableLeft="@drawable/baseline_perm_identity_24"
