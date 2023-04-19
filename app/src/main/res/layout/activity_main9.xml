@@ -18,36 +18,6 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/ID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/sansita_bold"
-        android:text="ID:PT12345678"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/sansita_bold"
-        android:text="12/02/2022-12:30"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
-
     <EditText
         android:id="@+id/ID_"
         android:layout_width="360dp"
@@ -57,7 +27,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:fontFamily="@font/bebas_neue"
-        android:hint="ID Number"
+        android:hint="Name"
         android:inputType="textPersonName"
         android:paddingLeft="15dp"
         android:textSize="20dp"
@@ -66,7 +36,7 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <EditText
         android:id="@+id/email_id"
@@ -86,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
+        app:layout_constraintVertical_bias="0.284" />
 
     <EditText
         android:id="@+id/PHN"
@@ -106,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <EditText
         android:id="@+id/PW"
@@ -118,7 +88,7 @@
         android:ems="10"
         android:fontFamily="@font/bebas_neue"
         android:hint="Password"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

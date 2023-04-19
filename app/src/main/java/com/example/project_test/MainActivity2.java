@@ -37,7 +37,8 @@ public class MainActivity2 extends AppCompatActivity {
 
         button = findViewById(R.id.signup_btn);
 
-        lgbutton.setOnClickListener(new View.OnClickListener() {
+        lgbutton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 String email = loginemail.getText().toString();
