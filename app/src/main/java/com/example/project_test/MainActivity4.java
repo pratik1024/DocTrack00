@@ -16,13 +16,9 @@ public class MainActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
         button = findViewById(R.id.reg_btn);
-        email_txt=getIntent().getExtras().getString("email");
-        pw_txt=getIntent().getExtras().getString("pw");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String user = email_txt.trim();
-                String pass = pw_txt.trim();
                 Intent i = new Intent(MainActivity4.this, MainActivity5.class);
                 startActivity(i);
             }

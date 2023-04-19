@@ -21,6 +21,7 @@ import io.github.muddz.styleabletoast.StyleableToast;
 public class MainActivity3 extends AppCompatActivity {
     private FirebaseAuth auth ;
     private EditText signupemail, signuppw;
+    EditText name,phone,at,postal_pin;
  Button button;
     String email_txt;
     String pw_txt;
@@ -31,6 +32,11 @@ public class MainActivity3 extends AppCompatActivity {
         button = findViewById(R.id.next_btn);
         signupemail = findViewById(R.id.email_id);
         signuppw= findViewById(R.id.PW);
+        name = findViewById(R.id.ID);
+        phone=findViewById(R.id.PHN);
+        at = findViewById(R.id.at_);
+        postal_pin=findViewById(R.id.post_);
+        auth = FirebaseAuth.getInstance();
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,12 +53,11 @@ public class MainActivity3 extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if( task.isSuccessful()){
-                                StyleableToast.makeText(getApplicationContext(), "Dataset Updated", Toast.LENGTH_LONG, R.style.mytoast).show();
-                                Intent iPtnt = new Intent(getApplicationContext(), MainActivity4.class);
-                                startActivity(iPtnt);
+                                StyleableToast.makeText(MainActivity3.this, "Dataset Updated", Toast.LENGTH_LONG, R.style.mytoast).show();
+                                startActivity(new Intent(MainActivity3.this,MainActivity4.class));
                             }
                             else {
-                                StyleableToast.makeText(getApplicationContext(), "Dataset Updated Failed" + task.getException().getMessage(), Toast.LENGTH_LONG, R.style.mytoast).show();
+                                StyleableToast.makeText(MainActivity3.this, "Dataset Updated Failed" + task.getException().getMessage(), Toast.LENGTH_LONG, R.style.mytoast).show();
                             }
                         }
                     });
